@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rog_red">#FFFF0040</color>
+    <color name="rog_red_dark">#FFB8002E</color>
+    <color name="rog_red_light">#FFFF4070</color>
+    <color name="rog_black">#FF0A0A0A</color>
+    <color name="rog_dark_gray">#FF1A1A2E</color>
+    <color name="rog_medium_gray">#FF2D2D44</color>
+    <color name="rog_light_gray">#FF4A4A6A</color>
+    <color name="rog_white">#FFFAFAFA</color>
+    <color name="rog_cyan">#FF00E5FF</color>
+    <color name="rog_cyan_dark">#FF00ACC1</color>
+
+    <!-- Button colors -->
+    <color name="btn_a_color">#FF4CAF50</color>
+    <color name="btn_b_color">#FFF44336</color>
+    <color name="btn_x_color">#FF2196F3</color>
+    <color name="btn_y_color">#FFFFEB3B</color>
+    <color name="btn_default_color">#80FFFFFF</color>
+    <color name="btn_pressed_color">#B3FFFFFF</color>
+
+    <!-- Overlay colors -->
+    <color name="overlay_bg">#40000000</color>
+    <color name="dpad_bg">#60222244</color>
+    <color name="dpad_pressed">#90FF0040</color>
+    <color name="joystick_base">#50333355</color>
+    <color name="joystick_thumb">#90FF0040</color>
+    <color name="trigger_bg">#60222244</color>
+    <color name="trigger_pressed">#90FF0040</color>
+</resources>

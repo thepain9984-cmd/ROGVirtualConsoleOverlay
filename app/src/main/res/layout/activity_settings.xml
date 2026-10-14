@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rog_black"
+    tools:context=".SettingsActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/rog_dark_gray"
+        app:title="@string/settings_title"
+        app:titleTextColor="@color/rog_white"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@color/rog_white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/main_padding">
+
+            <!-- Appearance Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_category_appearance"
+                android:textColor="@color/rog_red"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_opacity"
+                android:textColor="@color/rog_white"
+                android:textSize="16sp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderOpacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="0.1"
+                android:valueTo="1.0"
+                android:stepSize="0.05"
+                android:value="0.8"
+                app:thumbColor="@color/rog_red"
+                app:trackColorActive="@color/rog_red"
+                app:trackColorInactive="@color/rog_medium_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_scale"
+                android:textColor="@color/rog_white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderScale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="0.5"
+                android:valueTo="2.0"
+                android:stepSize="0.1"
+                android:value="1.0"
+                app:thumbColor="@color/rog_red"
+                app:trackColorActive="@color/rog_red"
+                app:trackColorInactive="@color/rog_medium_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rog_medium_gray"
+                android:layout_marginVertical="16dp" />
+
+            <!-- Controls Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_category_controls"
+                android:textColor="@color/rog_red"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchDpad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_show_dpad"
+                android:textColor="@color/rog_white"
+                android:checked="true"
+                android:padding="8dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchJoysticks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_show_joysticks"
+                android:textColor="@color/rog_white"
+                android:checked="true"
+                android:padding="8dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchLockPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_lock_position"
+                android:textColor="@color/rog_white"
+                android:checked="false"
+                android:padding="8dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rog_medium_gray"
+                android:layout_marginVertical="16dp" />
+
+            <!-- Feedback Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_category_feedback"
+                android:textColor="@color/rog_red"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switchHaptic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_haptic"
+                android:textColor="@color/rog_white"
+                android:checked="true"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_haptic_intensity"
+                android:textColor="@color/rog_white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sliderHapticIntensity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="1"
+                android:valueTo="3"
+                android:stepSize="1"
+                android:value="2"
+                app:thumbColor="@color/rog_red"
+                app:trackColorActive="@color/rog_red"
+                app:trackColorInactive="@color/rog_medium_gray" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/rog_medium_gray"
+                android:layout_marginVertical="16dp" />
+
+            <!-- Profiles Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pref_category_profiles"
+                android:textColor="@color/rog_red"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnResetLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/pref_reset_layout"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:strokeColor="@color/rog_red"
+                android:textColor="@color/rog_red"
+                app:cornerRadius="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

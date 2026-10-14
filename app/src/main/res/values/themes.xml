@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ROGControls" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/rog_red</item>
+        <item name="colorPrimaryDark">@color/rog_red_dark</item>
+        <item name="colorAccent">@color/rog_cyan</item>
+        <item name="colorOnPrimary">@color/rog_white</item>
+        <item name="colorSecondary">@color/rog_cyan</item>
+        <item name="colorOnSecondary">@color/rog_black</item>
+        <item name="colorSurface">@color/rog_dark_gray</item>
+        <item name="colorOnSurface">@color/rog_white</item>
+        <item name="android:statusBarColor">@color/rog_black</item>
+        <item name="android:navigationBarColor">@color/rog_black</item>
+        <item name="android:windowBackground">@color/rog_black</item>
+    </style>
+</resources>

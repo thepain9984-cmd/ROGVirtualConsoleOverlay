@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dpad_size">160dp</dimen>
+    <dimen name="action_button_size">56dp</dimen>
+    <dimen name="action_button_cluster_spacing">64dp</dimen>
+    <dimen name="joystick_size">140dp</dimen>
+    <dimen name="joystick_thumb_size">50dp</dimen>
+    <dimen name="trigger_width">80dp</dimen>
+    <dimen name="trigger_height">40dp</dimen>
+    <dimen name="menu_button_width">48dp</dimen>
+    <dimen name="menu_button_height">24dp</dimen>
+    <dimen name="control_margin">16dp</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+    <dimen name="main_padding">24dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+</resources>
